@@ -188,6 +188,7 @@ header .mobile {
 
   #sign-up-cta .content {
     margin-top: 0;
+
   }
 
   #sign-up-cta .email {
@@ -205,11 +206,22 @@ header .mobile {
 
 @media only screen and (max-width: 450px) {
   #sign-up-section {
+    align-items: center;
+    justify-content: center;
     height: 20rem;
+  }
+
+  #sign-up-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
   }
 
   #sign-up-cta h1 {
     font-size: 2.25rem;
+
   }
 
   #sign-up-cta h2 {
@@ -269,6 +281,23 @@ header .mobile {
 }
 
 @media only screen and (max-width: 890px) {
+
+  #features-section {
+    padding: 4rem 5%;
+    height: 25rem;
+    width: auto;
+
+  }
+
+  .feature {
+    flex: 2;
+    height: 90%;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+
+
   .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
@@ -282,15 +311,51 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
+
   #features-section {
     flex-flow: column;
-    padding: 0;
+    padding: 1rem;
+    height: 60rem;
+    width: auto;
+    background-color: white;
   }
 
   .feature {
+    flex: 2;
+    height: 60%;
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1.25rem 1rem;
   }
+
+  .feature .content {
+    margin-top: 1rem;
+
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  #features-section {
+    flex-flow: column;
+    padding: 1rem;
+    height: 40rem;
+    width: auto;
+    background-color: white;
+  }
+
+  .feature {
+    flex: 2;
+    height: 90%;
+    margin: 0;
+    padding: 1.25rem 1rem;
+  }
+
+  .feature .content {
+    margin-top: 1rem;
+  }
+
+
 }
 
 /* Filters Section */
@@ -321,6 +386,18 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: inline-flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+#filters-section .image-container {
+  width: 25%;
+  height: auto;
+}
+
+#filters-section img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -348,6 +425,11 @@ header .mobile {
     padding: 0;
   }
 
+  #filters-section .image-container {
+    width: 33%;
+    height: auto;
+  }
+
   #filters-section .extra {
     display: none;
   }
@@ -359,11 +441,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -372,12 +454,12 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
@@ -386,7 +468,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
